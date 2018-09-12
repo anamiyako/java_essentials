@@ -18,8 +18,8 @@ public class FirstSeleniumChrome {
 
     public static void main(String[] args) {
     	//System.setProperty("webdriver.gecko.driver", "C:\test_automation\drivers\geckodriver.exe");
-    	
-    	String chromeProfile = "/Users/jnavarro/Library/Application Support/Google/Chrome/automationGuy";
+    	System.setProperty("webdriver.Chrome.driver", "C:/test_automation/drivers/chromedriver.exe");
+    	String chromeProfile = "/Library/Application Support/Google/Chrome/automationGuy";
     	ChromeOptions opts = new ChromeOptions();
     	opts.addArguments("--disable-notifications");
     	opts.addArguments("--start-maximized");
